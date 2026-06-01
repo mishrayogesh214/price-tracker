@@ -5,8 +5,8 @@ from datetime import datetime
 import os
 import smtplib
 
-import schedule
-import time
+# import schedule
+# import time
 
 # -------------------------------
 # CONFIG
@@ -158,8 +158,8 @@ def job():
     main()   # your existing function
 
 if __name__ == "__main__":
-    # main()
-    schedule.every(1).minutes.do(job)   # change to .day.at("10:00")
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    main()
+    # schedule.every(1).minutes.do(job)   # change to .day.at("10:00")
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)
